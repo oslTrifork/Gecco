@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		332A3F7125246406000A2B78 /* Gecco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332A3F7025246406000A2B78 /* Gecco.framework */; };
-		332A3F7225246406000A2B78 /* Gecco.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 332A3F7025246406000A2B78 /* Gecco.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3331D7C125245CC900E2FD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331D7C025245CC900E2FD9D /* AppDelegate.swift */; };
 		3331D7C325245CC900E2FD9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331D7C225245CC900E2FD9D /* SceneDelegate.swift */; };
 		3331D7C525245CC900E2FD9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331D7C425245CC900E2FD9D /* ViewController.swift */; };
@@ -16,6 +14,7 @@
 		3331D7CA25245CCB00E2FD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3331D7C925245CCB00E2FD9D /* Assets.xcassets */; };
 		3331D7CD25245CCB00E2FD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3331D7CB25245CCB00E2FD9D /* LaunchScreen.storyboard */; };
 		3331D7D625245D6800E2FD9D /* AnnotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331D7D525245D6800E2FD9D /* AnnotationViewController.swift */; };
+		6012D1BD2B1F33FE00B6B372 /* Gecco in Frameworks */ = {isa = PBXBuildFile; productRef = 6012D1BC2B1F33FE00B6B372 /* Gecco */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				332A3F7225246406000A2B78 /* Gecco.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,8 +31,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		332A3F602524623F000A2B78 /* Gecco.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gecco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		332A3F7025246406000A2B78 /* Gecco.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gecco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3331D7BD25245CC900E2FD9D /* GeccoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeccoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3331D7C025245CC900E2FD9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3331D7C225245CC900E2FD9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332A3F7125246406000A2B78 /* Gecco.framework in Frameworks */,
+				6012D1BD2B1F33FE00B6B372 /* Gecco in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +57,6 @@
 		332A3F5F2524623F000A2B78 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				332A3F7025246406000A2B78 /* Gecco.framework */,
-				332A3F602524623F000A2B78 /* Gecco.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +110,9 @@
 			dependencies = (
 			);
 			name = GeccoExample;
+			packageProductDependencies = (
+				6012D1BC2B1F33FE00B6B372 /* Gecco */,
+			);
 			productName = GeccoExample;
 			productReference = 3331D7BD25245CC900E2FD9D /* GeccoExample.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 3331D7B425245CC900E2FD9D;
+			packageReferences = (
+				6012D1B92B1F334B00B6B372 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = 3331D7BE25245CC900E2FD9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -373,6 +373,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6012D1B92B1F334B00B6B372 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6012D1BC2B1F33FE00B6B372 /* Gecco */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Gecco;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3331D7B525245CC900E2FD9D /* Project object */;
 }

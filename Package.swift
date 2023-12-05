@@ -23,11 +23,13 @@ let package = Package(
         .target(
             name: "Gecco",
             dependencies: [],
+            exclude: ["../../GeccoExample"],
             swiftSettings: [.define("DEBUG_GEDATSU")]
         ),
         .testTarget(
             name: "GeccoTests",
             dependencies: ["Gecco"],
+            exclude: ["../../GeccoExample"],
             swiftSettings: [.define("DEBUG_GEDATSU")]
         )
     ]
